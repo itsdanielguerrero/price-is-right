@@ -6,7 +6,8 @@ function calculateItemTotal(item) {
 }
 
 function calculateTotal(items) {
-  return items
+  //using mapping to calculate total price of each item in object array.
+  return items.map(calculateItemTotal)
 }
 
 module.exports = calculateTotal
